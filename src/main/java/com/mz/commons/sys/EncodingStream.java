@@ -4,6 +4,7 @@ import java.io.*;
 
 /**
  * 2016-12-06
+ * 第三次修改
  */
 public class EncodingStream extends Thread {
     private InputStream is;
