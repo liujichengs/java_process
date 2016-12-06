@@ -3,7 +3,8 @@ package com.mz.commons.sys;
 import java.io.*;
 
 /**
- * 2016-12-06
+ * 2016-12-06对对对
+ * 第一次修改
  */
 public class EncodingStream extends Thread {
     private InputStream is;
