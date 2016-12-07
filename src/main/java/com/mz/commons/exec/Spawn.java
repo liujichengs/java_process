@@ -20,6 +20,13 @@ public class Spawn {
         return Engine.exec(command, listener, folder);
     }
     
+    /**
+     * 003
+     * 
+     * @param command
+     * @param listener
+     * @return
+     */
     public static XProcess asynExec(final String command, final ProcessListener listener) {
         return Engine.exec(command, listener);
     }
