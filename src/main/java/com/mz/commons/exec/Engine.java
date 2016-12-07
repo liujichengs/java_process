@@ -10,21 +10,31 @@ import java.util.Date;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Engine {
-
-    public static XProcess exec(final String[] command, final ProcessListener listener, final File folder) {
-        final ProcessBuilder pb;
-        final Process process;
-        try {
-            pb = new ProcessBuilder(command);
-            if (folder != null) {
-                pb.directory(folder);
-            }
-            // pb.redirectOutput(Redirect.PIPE);
-            // pb.redirectInput(Redirect.PIPE);
-            process = pb.start();
-        } catch (final IOException e) {
-            throw new RuntimeException(e);
-        }
+ 
+    /**
+     * master 第一次修改
+     * 
+     * @param command
+     * @param listener
+     * @param folder
+     * @return
+     */
+	 
+	public static XProcess exec(final String[] command, final ProcessListener listener, final File folder) {
+		final ProcessBuilder pb;
+		final Process process;
+		//branch 第二次修改
+		try {
+			pb = new ProcessBuilder(command);
+			if (folder != null) {
+				pb.directory(folder);
+			}
+			// pb.redirectOutput(Redirect.PIPE);
+			// pb.redirectInput(Redirect.PIPE);
+			process = pb.start();
+		} catch (final IOException e) {
+			throw new RuntimeException(e);
+		}
 
         final AtomicLong lastOutput = new AtomicLong();
         lastOutput.set(0);

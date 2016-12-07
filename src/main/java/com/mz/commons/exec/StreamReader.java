@@ -7,6 +7,12 @@ import java.io.InputStreamReader;
 
 public class StreamReader {
 
+    /**
+     * master
+     * 
+     * @author ljc124854
+     * @version $Id: StreamReader.java, v 0.1 2016年12月7日 下午4:59:19 ljc124854 Exp $
+     */
 	private final class WorkerThread extends Thread {
 		private final StreamListener listener;
 		private final InputStream stream;
