@@ -8,13 +8,7 @@ import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
 public class Spawn {
-
-    /**
-     * 异步执行
-     * @param command
-     * @param listener
-     * @return
-     */
+ 
     public static XProcess asynExec(final String[] command, final File folder, final ProcessListener listener) {
         return Engine.exec(command, listener, folder);
     }
