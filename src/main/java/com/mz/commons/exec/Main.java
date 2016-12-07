@@ -8,6 +8,9 @@ public class Main {
     /**
      * 第02次修改
      */
+    /**
+     * 第03次修改
+     */
 	static void synchronously() {
 		Spawn.synExec(
 				new String[] { "/bin/bash", "-c", "vmstat -s -S M | egrep -ie 'memory|swap' | grep 'free memory'" },
