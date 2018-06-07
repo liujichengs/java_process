@@ -1,6 +1,6 @@
  
 
-package com.mz.commons.sys;
+package com.github.process.sys;
 
 import java.net.InetAddress;
 import java.net.NetworkInterface;

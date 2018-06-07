@@ -1,4 +1,4 @@
-package com.mz.commons.exec;
+package com.github.process.exec;
 
 public class Main {
 
